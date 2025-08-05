@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Personalize with sister's details
-    const sisterName = "Sis Teemerh"; // Replace with your sister's name
-    const sisterBirthday = "2002-08-05"; // Replace with YYYY-MM-DD format
+    const sisterName = "Sis Teemerh";
+    const sisterBirthday = "2002-08-05"; // YYYY-MM-DD format
     
     // Set name and age
     document.getElementById('sister-name').textContent = sisterName;
@@ -111,31 +111,29 @@ function initializeCake() {
 function createConfetti() {
     const colors = ['#e91e63', '#00bcd4', '#ffeb3b', '#4caf50', '#ff9800'];
     const container = document.querySelector('.confetti-container');
-
+    
     // Clear previous confetti
     container.innerHTML = '';
-
+    
     for (let i = 0; i < 100; i++) {
         const confetti = document.createElement('div');
         confetti.classList.add('confetti');
-
+        
+        // Fixed the backgroundColor typo here
         confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-
         confetti.style.width = `${Math.random() * 10 + 5}px`;
         confetti.style.height = `${Math.random() * 10 + 5}px`;
         confetti.style.left = `${Math.random() * 100}%`;
         confetti.style.opacity = '1';
         confetti.style.animation = `fall ${Math.random() * 3 + 2}s linear ${Math.random() * 5}s forwards`;
-
+        
         // Add random shape
-        if (Math.random() > 0.5 {
+        if (Math.random() > 0.5) {
             confetti.style.borderRadius = '50%';
         }
-
+        
         container.appendChild(confetti);
     }
-
-}
     
     // Add CSS for falling animation
     const style = document.createElement('style');
@@ -154,4 +152,4 @@ function createConfetti() {
         container.innerHTML = '';
         document.head.removeChild(style);
     }, 8000);
-}
+        }
