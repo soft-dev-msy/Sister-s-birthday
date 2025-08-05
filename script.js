@@ -111,35 +111,31 @@ function initializeCake() {
 function createConfetti() {
     const colors = ['#e91e63', '#00bcd4', '#ffeb3b', '#4caf50', '#ff9800'];
     const container = document.querySelector('.confetti-container');
-    
+
     // Clear previous confetti
     container.innerHTML = '';
-    
+
     for (let i = 0; i < 100; i++) {
         const confetti = document.createElement('div');
         confetti.classList.add('confetti');
-        
-        // Random properties
-        const color = colors[Math.floor(Math.random() * colors.length)];
-        const size = Math.random() * 10 + 5;
-        const left = Math.random() * 100;
-        const animationDuration = Math.random() * 3 + 2;
-        const animationDelay = Math.random() * 5;
-        
-        confetti.style.backgroundColor = color;
-        confetti.style.width = ${size}px;
-        confetti.style.height = ${size}px;
-        confetti.style.left = ${left}%;
+
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+        confetti.style.width = `${Math.random() * 10 + 5}px`;
+        confetti.style.height = `${Math.random() * 10 + 5}px`;
+        confetti.style.left = `${Math.random() * 100}%`;
         confetti.style.opacity = '1';
-        confetti.style.animation = fall ${animationDuration}s linear ${animationDelay}s forwards;
-        
+        confetti.style.animation = `fall ${Math.random() * 3 + 2}s linear ${Math.random() * 5}s forwards`;
+
         // Add random shape
-        if (Math.random() > 0.5) {
+        if (Math.random() > 0.5 {
             confetti.style.borderRadius = '50%';
         }
-        
+
         container.appendChild(confetti);
     }
+
+}
     
     // Add CSS for falling animation
     const style = document.createElement('style');
