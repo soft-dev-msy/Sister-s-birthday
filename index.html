@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Sis Teemerh!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="birthday-card">
+        <!-- Confetti container -->
+        <div class="confetti-container"></div>
+        
+        <!-- Header with name and age -->
+        <header class="card-header">
+            <h1>Happy Birthday, <span id="sister-name">Sis Teemerh</span>!</h1>
+            <h2>Today you're <span id="sister-age">23</span> years young!</h2>
+        </header>
+        
+        <!-- Countdown section -->
+        <section class="countdown-section">
+            <h3>Until your next birthday:</h3>
+            <div class="countdown-timer">
+                <div class="time-block">
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+                <div class="time-block">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+                <div class="time-block">
+                    <span id="minutes">00</span>
+                    <small>Minutes</small>
+                </div>
+                <div class="time-block">
+                    <span id="seconds">00</span>
+                    <small>Seconds</small>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Memory gallery -->
+        <section class="gallery-section">
+            <h3>Our Special Memories</h3>
+            <div class="gallery-container">
+                <div class="gallery-item active" style="background-image: url('memory1.jpg')"></div>
+                <div class="gallery-item" style="background-image: url('memory2.jpg')"></div>
+                <div class="gallery-item" style="background-image: url('memory3.jpg')"></div>
+                <button class="gallery-nav prev">❮</button>
+                <button class="gallery-nav next">❯</button>
+            </div>
+        </section>
+        
+        <!-- Virtual cake -->
+        <section class="cake-section">
+            <h3>Make a wish and blow out the candles!</h3>
+            <div class="cake">
+                <div class="plate"></div>
+                <div class="layer bottom"></div>
+                <div class="layer middle"></div>
+                <div class="layer top"></div>
+                <div class="icing"></div>
+                <div class="candle" data-lit="true">
+                    <div class="flame"></div>
+                    <div class="wick"></div>
+                </div>
+                <!-- Add more candles as needed -->
+            </div>
+            <button id="blow-button">Blow Out Candles</button>
+        </section>
+        
+        <!-- Personal message -->
+        <section class="message-section">
+            <h3>A Message From Your Brother</h3>
+            <p class="personal-message">
+                Dear Sis, 
+
+Happy Birthday to the most amazing sister in the world! 🎉🎂  
+
+On your special day, I want you to know how much you mean to me. You’re not just my sister—you’re my best friend, and the one who’s always had my back no matter what.  
+
+Thank you for all the laughter, the memories, and even the silly fights (because let’s be honest, they just made us closer). Life would be so boring without you!  
+
+Today, I hope you’re spoiled rotten, surrounded by love, and reminded just how incredible you are. You deserve all the happiness in the world—and maybe an extra slice of cake, too. 🍰  
+
+Here’s to another year of adventures, inside jokes, and you being the awesome person you are. Love you to the moon and back!
+                <!-- Add your personal message here -->
+            </p>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
